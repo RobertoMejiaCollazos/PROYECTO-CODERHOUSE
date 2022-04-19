@@ -190,7 +190,7 @@ html {
 }
 
 /* ========== ANIMACIÓN ========== */
-/* .presentacion__contendorMouse{
+.presentacion__contendorMouse{
     width: 100px;
     position: relative;
     height: 100px;
@@ -251,7 +251,7 @@ html {
     font-size: 50px;
     text-align: center;
     opacity: 0;
-} */
+}
 /* ================ MAIN ================ */
 .main {
     margin: 0 auto;
@@ -656,7 +656,7 @@ html {
     max-width: 100%;
     height: auto;
     margin: 0 auto;
-    background-color: #0010a3;
+    background: linear-gradient(115deg, #00063b, #0010a3);
     z-index: 2;
 }
 
