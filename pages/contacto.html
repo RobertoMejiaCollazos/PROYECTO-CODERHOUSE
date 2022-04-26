@@ -63,11 +63,9 @@
                 <div class="presentacion__contenedorIzquierda">
                 </div>
                 <div class="presentacion__contenedorDerecha">
-                    <h1 class="presentacion__titulo">Hacemos que la <span
-                            class="presentacion__palabra">innovación</span> suceda</h1>
-                    <p class="presentacion__parrafo">Creamos soluciones con tecnología que impactan
-                        en la vida de las
-                        personas.</p>
+                    <h1 class="presentacion__titulo"><span
+                            class="presentacion__palabra">Contacto</span></h1>
+                    <p class="presentacion__parrafo">Ponte en contacto con nosotros y hagamos que la innovación suceda.</p>
                 </div>
             </div>
             <!--  ANIMACIÓN   -->
@@ -91,17 +89,19 @@
             </div>
             <div class="contacto__contenedorIzquierda">
                 <form class="contacto__form">
-                    <label class="contacto__label" for="name">Nombre</label>
-                    <input class="contacto__input" type="text" name="name" id="name">
-                    <label class="contacto__label" for="asunto">Correo electrónico</label>
-                    <input class="contacto__input" type="email" name="email" id="asunto" required>
-                    <label class="contacto__label" for="asunto">Asunto</label>
-                    <input class="contacto__input" type="text" name="asunto" id="asunto">
-
-                    <label class="contacto__label" for="mensaje">Mensaje</label>
-                    <textarea class="contacto__textarea" name="mensaje" id="mensaje" cols="30" rows="10"
-                        placeholder="Escribe aquí el mensaje."></textarea>
-                    <input class="contacto__inputSubmit" type="submit" value="Enviar">
+                    <div class="contacto__labelInput mb-3">
+                        <label for="exampleFormControlInput1" class="contacto__label form-label">Nombre y Apellido:</label>
+                        <input type="text" class="contacto__input form-control" id="exampleFormControlInput1" placeholder="nombre y apellido">
+                        <label for="exampleFormControlInput1" class="contacto__label form-label">Correo Electrónico:</label>
+                        <input type="email" class="contacto__input form-control" id="exampleFormControlInput1" placeholder="name@dominio.com">
+                      </div>
+                      <div class="contacto__labelInput mb-3">
+                        <label for="exampleFormControlTextarea1" class="contacto__label form-label">Mensaje</label>
+                        <textarea class="contacto__textarea form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+                      <div class="contacto__labelInput col-auto">
+                        <button type="submit" class="contacto__btn btn btn-primary mb-3">ENVIAR</button>
+                      </div>
                 </form>
             </div>
 

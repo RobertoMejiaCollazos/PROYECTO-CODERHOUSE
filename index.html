@@ -84,20 +84,26 @@
     <main class="main">
         <!--  PÁGINA DE BIENVENIDA  -->
         <section class="bienvenida" id="bienvenida">
-            <div class="bienvenida__izquierda">
-                <h2 class="bienvenida__titulo">Bienvenido</h2>
-                <p class="bienvenida__parrafo">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem corrupti adipisci doloribus
-                    obcaecati temporibus, aspernatur consequatur iure optio. Accusamus nemo iure, officiis labore
-                    necessitatibus expedita ea optio quo repudiandae porro odio eos iste consectetur a harum, aliquid
-                    magnam incidunt distinctio.
-                </p>
-            </div>
-            <div class="bienvenida__derecha">
-                <video class="bienvenida__video" controls src="assets/video/bienvenida.mov"></video>
+            <div class="bienvenida__contenedor container">
+                <div class="bienvenida__row row">
+                    <div class="bienvenida__izquierda col-12 col-lg-6">
+                        <h2 class="bienvenida__titulo">Bienvenido</h2>
+                        <p class="bienvenida__parrafo">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem corrupti adipisci doloribus
+                            obcaecati temporibus, aspernatur consequatur iure optio. Accusamus nemo iure, officiis labore
+                            necessitatibus expedita ea optio quo repudiandae porro odio eos iste consectetur a harum, aliquid
+                            magnam incidunt distinctio.
+                            obcaecati temporibus, aspernatur consequatur iure optio. Accusamus nemo iure, officiis labore
+                            necessitatibus expedita ea optio quo repudiandae porro odio eos iste consectetur a harum, aliquid
+                            magnam incidunt distinctio.
+                        </p>
+                    </div>
+                    <div class="bienvenida__derecha col-12 col-lg-6">
+                        <video class="bienvenida__video" controls src="assets/video/bienvenida.mov"></video>
+                    </div>
+                </div>
             </div>
         </section>
-
         <!--  FIN - PÁGINA DE BIENVENIDA  -->
 
         <!--  PÁGINA DE SUSCRIPCION  -->
@@ -117,43 +123,77 @@
         <section class="clientes" id="clientes">
             <div class="clientes__contenedor">
                 <h2 class="clientes__titulo">Nuestros Clientes</h2>
-                <div class="clientes__contenedorLogos">
-                    <a class="clientes__contenedorLogos--link" href="https://www.youtube.com/"><img
-                            class="clientes__contenedorLogos--img" src="assets/img/clientes/imagen-negro-1.png"
-                            alt="logo-marca-1"></a>
-                    <a class="clientes__contenedorLogos--link" href="https://www.youtube.com/"><img
-                            class="clientes__contenedorLogos--img" src="assets/img/clientes/imagen-negro-2.png"
-                            alt="logo-marca-2"></a>
-                    <a class="clientes__contenedorLogos--link" href="https://www.youtube.com/"><img
-                            class="clientes__contenedorLogos--img" src="assets/img/clientes/imagen-negro-3.png"
-                            alt="logo-marca-3"></a>
-                    <a class="clientes__contenedorLogos--link" href="https://www.youtube.com/"><img
-                            class="clientes__contenedorLogos--img" src="assets/img/clientes/imagen-negro-4.png"
-                            alt="logo-marca-4"></a>
-                    <a class="clientes__contenedorLogos--link" href="https://www.youtube.com/"><img
-                            class="clientes__contenedorLogos--img" src="assets/img/clientes/imagen-negro-5.png"
-                            alt="logo-marca-5"></a>
-                    <a class="clientes__contenedorLogos--link" href="https://www.youtube.com/"><img
-                            class="clientes__contenedorLogos--img" src="assets/img/clientes/imagen-negro-6.png"
-                            alt="logo-marca-6"></a>
-                    <a class="clientes__contenedorLogos--link" href="https://www.youtube.com/"><img
-                            class="clientes__contenedorLogos--img" src="assets/img/clientes/imagen-negro-7.png"
-                            alt="logo-marca-7"></a>
-                    <a class="clientes__contenedorLogos--link" href="https://www.youtube.com/"><img
-                            class="clientes__contenedorLogos--img" src="assets/img/clientes/imagen-negro-8.png"
-                            alt="logo-marca-8"></a>
-                    <a class="clientes__contenedorLogos--link" href="https://www.youtube.com/"><img
-                            class="clientes__contenedorLogos--img" src="assets/img/clientes/imagen-negro-9.png"
-                            alt="logo-marca-9"></a>
-                    <a class="clientes__contenedorLogos--link" href="https://www.youtube.com/"><img
-                            class="clientes__contenedorLogos--img" src="assets/img/clientes/imagen-negro-10.png"
-                            alt="logo-marca-10"></a>
-                    <a class="clientes__contenedorLogos--link" href="https://www.youtube.com/"><img
-                            class="clientes__contenedorLogos--img" src="assets/img/clientes/imagen-negro-11.png"
-                            alt="logo-marca-11"></a>
-                    <a class="clientes__contenedorLogos--link" href="https://www.youtube.com/"><img
-                            class="clientes__contenedorLogos--img" src="assets/img/clientes/imagen-negro-12.png"
-                            alt="logo-marca-12"></a>
+                <div class="clientes__contenedorLogos container">
+                    <div class="clientes__row row">
+                        <div class="clientes__grid clientes__logo col-lg-2 col-md-3 col-sm-4 col-xs-3 d-flex justify-content-center mb-4">    
+                            <a class="clientes__contenedorLogos--link" href="https://www.youtube.com/"><img
+                                    class="clientes__contenedorLogos--img" src="assets/img/clientes/imagen-negro-1.png"
+                                    alt="logo-marca-1"></a>           
+                        </div>
+                        
+                        <div class="clientes__grid clientes__logo col-lg-2 col-md-3 col-sm-4 col-xs-3 d-flex justify-content-center mb-4">    
+                            <a class="clientes__contenedorLogos--link" href="https://www.youtube.com/"><img
+                                    class="clientes__contenedorLogos--img" src="assets/img/clientes/imagen-negro-2.png"
+                                    alt="logo-marca-1"></a>           
+                        </div>
+                        
+                        <div class="clientes__grid clientes__logo col-lg-2 col-md-3 col-sm-4 col-xs-3 d-flex justify-content-center mb-4">    
+                            <a class="clientes__contenedorLogos--link" href="https://www.youtube.com/"><img
+                                    class="clientes__contenedorLogos--img" src="assets/img/clientes/imagen-negro-3.png"
+                                    alt="logo-marca-1"></a>           
+                        </div>
+                        <div class="clientes__grid clientes__logo col-lg-2 col-md-3 col-sm-4 col-xs-3 d-flex justify-content-center mb-4">    
+                            <a class="clientes__contenedorLogos--link" href="https://www.youtube.com/"><img
+                                    class="clientes__contenedorLogos--img" src="assets/img/clientes/imagen-negro-4.png"
+                                    alt="logo-marca-1"></a>           
+                        </div>
+                        
+                        <div class="clientes__grid clientes__logo col-lg-2 col-md-3 col-sm-4 col-xs-3 d-flex justify-content-center mb-4">    
+                            <a class="clientes__contenedorLogos--link" href="https://www.youtube.com/"><img
+                                    class="clientes__contenedorLogos--img" src="assets/img/clientes/imagen-negro-5.png"
+                                    alt="logo-marca-1"></a>           
+                        </div>
+                        
+                        <div class="clientes__grid clientes__logo col-lg-2 col-md-3 col-sm-4 col-xs-3 d-flex justify-content-center mb-4">    
+                            <a class="clientes__contenedorLogos--link" href="https://www.youtube.com/"><img
+                                    class="clientes__contenedorLogos--img" src="assets/img/clientes/imagen-negro-6.png"
+                                    alt="logo-marca-1"></a>           
+                        </div>
+                        <!--  Logos (No-480px)  -->
+                        <div class="clientes__grid clientes__logoNoMovil col-lg-2 col-md-3 col-sm-4 col-xs-3 d-flex justify-content-center mb-4">            
+                            <a class="clientes__contenedorLogos--link" href="https://www.youtube.com/"><img
+                                    class="clientes__contenedorLogos--img" src="assets/img/clientes/imagen-negro-7.png"
+                                    alt="logo-marca-1"></a>                 
+                        </div>
+                        <div class="clientes__grid clientes__logoNoMovil col-lg-2 col-md-3 col-sm-4 col-xs-3 d-flex justify-content-center mb-4">            
+                            <a class="clientes__contenedorLogos--link" href="https://www.youtube.com/"><img
+                                    class="clientes__contenedorLogos--img" src="assets/img/clientes/imagen-negro-8.png"
+                                    alt="logo-marca-1"></a>                 
+                        </div>
+                        <div class="clientes__grid clientes__logoNoMovil col-lg-2 col-md-3 col-sm-4 col-xs-3 d-flex justify-content-center mb-4">            
+                            <a class="clientes__contenedorLogos--link" href="https://www.youtube.com/"><img
+                                    class="clientes__contenedorLogos--img" src="assets/img/clientes/imagen-negro-9.png"
+                                    alt="logo-marca-1"></a>                 
+                        </div>
+                        <div class="clientes__grid clientes__logoNoMovil col-lg-2 col-md-3 col-sm-4 col-xs-3 d-flex justify-content-center mb-4">            
+                            <a class="clientes__contenedorLogos--link" href="https://www.youtube.com/"><img
+                                    class="clientes__contenedorLogos--img" src="assets/img/clientes/imagen-negro-10.png"
+                                    alt="logo-marca-1"></a>                 
+                        </div>
+                        <div class="clientes__grid clientes__logoNoMovil col-lg-2 col-md-3 col-sm-4 col-xs-3 d-flex justify-content-center mb-4">            
+                            <a class="clientes__contenedorLogos--link" href="https://www.youtube.com/"><img
+                                    class="clientes__contenedorLogos--img" src="assets/img/clientes/imagen-negro-11.png"
+                                    alt="logo-marca-1"></a>                 
+                        </div>
+                        <div class="clientes__grid clientes__logoNoMovil col-lg-2 col-md-3 col-sm-4 col-xs-3 d-flex justify-content-center mb-4">            
+                            <a class="clientes__contenedorLogos--link" href="https://www.youtube.com/"><img
+                                    class="clientes__contenedorLogos--img" src="assets/img/clientes/imagen-negro-12.png"
+                                    alt="logo-marca-1"></a>                 
+                        </div>
+                  
+                    </div>
+                    
+                    
                 </div>
             </div>
         </section>

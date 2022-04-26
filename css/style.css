@@ -214,9 +214,10 @@ html {
 }
 
 /* ========== CONTENEDORES IGUALES 1 ========== */
-.bienvenida,
-.historia,
-.misionVision,
+.row {
+  margin: 0;
+}
+
 .contacto {
   width: 75%;
   height: 100vh;
@@ -227,12 +228,6 @@ html {
   justify-content: space-between;
 }
 
-.bienvenida__derecha,
-.bienvenida__izquierda,
-.historia__contenedor--derecha,
-.historia__contenedor--izquierda,
-.misionVision__contenedor--izquierda,
-.misionVision__contenedor--derecha,
 .contacto__contenedorIzquierda,
 .contacto__contenedorDerecha {
   width: 46%;
@@ -254,6 +249,7 @@ html {
   font-size: 30px;
   margin-bottom: 30px;
   font-weight: 700;
+  margin-top: 40px;
 }
 
 .bienvenida__parrafo,
@@ -299,7 +295,6 @@ html {
   color: #000000;
 }
 
-.equipo__contenedorIntegrantes,
 .servicios__contenedor {
   width: 100%;
   padding: 30px;
@@ -310,15 +305,10 @@ html {
   gap: 20px;
 }
 
-.equipo__integrantes,
-.servicios__servicios {
-  width: 300px;
-  background-color: #0010a3;
-  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.438);
+.equipo__contenedorIntegrantes {
+  padding: 30px;
 }
 
-.equipo__nombre,
-.equipo__funcion,
 .servicios__parrafo {
   font-family: "Lato", sans-serif;
   font-weight: 500;
@@ -328,7 +318,6 @@ html {
   padding-top: 7px;
 }
 
-.equipo__funcion,
 .servicios__nombre {
   font-family: "Lato", sans-serif;
   text-align: center;
@@ -342,11 +331,15 @@ html {
 .servicios,
 .portafolio {
   max-width: 1000px;
-  margin: 80px auto;
+  margin: 0 auto;
 }
 
 /* ////////////////////////////// INICIO ////////////////////////////// */
 /* ========== BIENVENIDA ========== */
+.bienvenida {
+  padding: 8rem 2rem;
+}
+
 .bienvenida__video {
   width: 100%;
 }
@@ -399,25 +392,20 @@ html {
 }
 
 ::placeholder {
-  padding: 20px 0px 10px 20px;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
 
 /* ========== CLIENTES ========== */
+.clientes {
+  margin: 80px auto;
+}
+
 .clientes__titulo {
   margin-bottom: 30px;
   text-align: center;
   font-size: 30px;
   font-family: "Lato", sans-serif;
-}
-
-.clientes__contenedorLogos {
-  padding: 2rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 20px;
 }
 
 .clientes__contenedorLogos--link {
@@ -431,9 +419,16 @@ html {
 
 /* ////////////////////////////// ACERCA ////////////////////////////// */
 /* ========== HISTORIA ========== */
+.historia {
+  padding: 8rem 2rem;
+}
 /* ========== FIN - HISTORIA ========== */
 
 /* ========== EQUIPO ========== */
+.equipo__informacion {
+  background-color: #0010a3;
+}
+
 .equipo__img {
   width: 100%;
 }
@@ -443,13 +438,6 @@ html {
   color: #ffffff;
 }
 
-.equipo__contenedorRedesSociales {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 15px;
-}
-
 .equipo__link {
   text-decoration: none;
 }
@@ -457,25 +445,27 @@ html {
 .equipo__icono {
   font-size: 25px;
   color: #ffffff;
-  margin: 7px 0px 0px 10px;
+  margin: 10px 0px 0px 10px;
 }
 
 /* ========== MISION VISON ========== */
+.misionVision {
+  padding: 8rem 2rem;
+}
 /* ========== FIN - MISION VISON ========== */
 /* ////////////////////////////// SERVICIOS ////////////////////////////// */
-.servicios__servicios {
-  background-color: transparent;
-  box-shadow: none;
+.servicios {
+  margin: 80px auto;
 }
 
 .servicios__img {
   width: 70%;
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
 }
 
 /* ////////////////////////////// PORTAFOLIO ////////////////////////////// */
+.portafolio {
+  margin: 80px auto;
+}
 .portafolio__botones {
   max-width: 600px;
   display: flex;
@@ -561,10 +551,9 @@ html {
 
 .contacto__label {
   font-family: "Lato", sans-serif;
-  color: #000000;
+  color: #0010a3;
   font-size: 20px;
   display: block;
-  padding: 5px 0px 10px 0px;
   font-weight: 500;
 }
 
@@ -579,20 +568,18 @@ html {
   height: 150px;
 }
 
-.contacto__inputSubmit {
-  width: 100%;
-  color: #ffffff;
-  background-color: #0010a3;
-  font-family: "Lato", sans-serif;
+.contacto__btn {
+  background-color: transparent;
+  border: 3px solid #0010a3;
+  color: #0010a3;
   font-weight: 700;
-  font-size: 20px;
-  padding: 15px;
-  border-radius: 10px;
+  font-family: "Lato", sans-serif;
 }
 
-.contacto__inputSubmit:hover {
+.contacto__btn:hover {
   color: #ffffff;
   background-color: #000c79;
+  border: 3px solid #000c79;
 }
 
 .contacto__informacion {
@@ -615,7 +602,7 @@ html {
   padding: 10px 10px;
 }
 
-/* ========== NO ME CARGA EL ICONO QUE QUERÍA FONT AWESOME ========== */
+/* ========== FOOTER ========== */
 .footer {
   position: relative;
   width: 100%;
@@ -734,29 +721,18 @@ html {
     opacity: 1;
   }
 
-  input:checked ~ .header__navegacion {
-    transform: scaleY(1);
-    opacity: 1;
+  .bienvenida {
+    padding: 2.5rem 0.5rem;
   }
 
-  input:checked ~ .header__label::before {
-    content: "\f00d";
+  .historia {
+    padding: 2.5rem 0.5rem;
   }
 
-  .bienvenida,
-  .historia,
   .misionVision {
-    width: 100%;
-    height: auto;
-    flex-direction: column;
-    padding: 2rem;
-    margin-bottom: 40px;
+    padding: 2.5rem 0.5rem;
   }
 
-  .bienvenida__izquierda,
-  .bienvenida__derecha,
-  .historia__contenedor--derecha,
-  .historia__contenedor--izquierda,
   .misionVision__contenedor--derecha,
   .misionVision__contenedor--izquierda {
     padding-top: 30px;
@@ -781,7 +757,7 @@ html {
   }
 
   .contacto {
-    height: 1000px;
+    height: 1050px;
     margin-top: 30px;
     max-width: 960px;
     display: flex;
@@ -796,11 +772,11 @@ html {
   }
 
   .contacto__contenedorIzquierda {
-    height: 500px;
+    height: 400px;
   }
 
   .contacto__contenedorDerecha {
-    height: 350px;
+    height: 340px;
   }
 
   .equipo {
@@ -828,6 +804,10 @@ html {
     font-size: 20px;
   }
 
+  .bienvenida {
+    padding: 2rem 0.5rem;
+  }
+
   .suscripcion__contenedor {
     width: 80%;
   }
@@ -838,27 +818,25 @@ html {
     grid-template-rows: repeat(6, 1fr);
   }
 
-  .bienvenida__izquierda,
-  .historia__contenedor--izquierda,
-  .historia__contenedor--derecha,
-  .misionVision__contenedor--derecha,
-  .misionVision__contenedor--izquierda,
-  .contacto__contenedorDerecha,
-  .contacto__contenedorDerecha {
-    margin: 0px auto 10px auto;
+  .historia {
+    padding: 2rem 0.5rem;
+  }
+
+  .misionVision {
+    padding: 2rem 0.5rem;
   }
 
   .contacto {
     justify-content: space-between;
-    height: 1150px;
+    height: 1070px;
   }
 
   .contacto__contenedorIzquierda {
-    height: 500px;
+    height: 400px;
   }
 
   .contacto__contenedorDerecha {
-    height: 380px;
+    height: 400px;
   }
 
   .bienvenida__titulo,
@@ -881,6 +859,10 @@ html {
   .equipo {
     margin: 0px;
   }
+
+  .clientes__logoNoMovil {
+    display: none !important;
+  }
 }
 
 /* ========== MOBILE 320PX ========== */
@@ -900,10 +882,6 @@ html {
 
   .suscripcion__contenedor {
     width: 80%;
-  }
-
-  .equipo {
-    margin: 0px;
   }
 
   .equipo__contenedorIntegrantes {
@@ -930,7 +908,7 @@ html {
   }
 
   .contacto__contenedorIzquierda {
-    height: 500px;
+    height: 350px;
   }
 
   .contacto__contenedorDerecha {
