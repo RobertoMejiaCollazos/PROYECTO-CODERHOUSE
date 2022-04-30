@@ -11,6 +11,8 @@
     <!--  BOOTSTRAP  -->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!--  ANIMACIÓN AOS  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--  ESTILOS  -->
     <link rel="stylesheet" href="../css/style.css">
     <title>CONTACTO</title>
@@ -83,7 +85,7 @@
                 <h2 class="contacto__titulo">Contacto</h2>
                 <p class="contacto__parrafo">Cuéntanos brevemente el concepto tu empresa quiere desarrollar y nos pondremos manos a la obra.</p>
             </div>
-            <div class="contacto__contenedorIzquierda">
+            <div class="contacto__contenedorIzquierda" data-aos="fade-down-right">
                 <form class="contacto__form">
                     <div class="contacto__labelInput mb-3">
                         <label class="contacto__label form-label" for="exampleFormControlInput1">Nombre y Apellido:</label>
@@ -101,7 +103,7 @@
                 </form>
             </div>
 
-            <div class="contacto__contenedorDerecha">
+            <div class="contacto__contenedorDerecha" data-aos="fade-down-left">
                 <div class="contacto__informacion">
                     <a class="contacto_link" target="_blank" href="https://www.coderhouse.com.pe/">
                         <p class="contacto__info">
@@ -223,6 +225,12 @@
 
     <!--  BOOTSTRAP  -->
     <script src="../js/bootstrap.bundle.min.js"></script>
+
+    <!--  ANIMACIÓN AOS  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 
