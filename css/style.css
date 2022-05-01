@@ -361,7 +361,8 @@ html {
 .clientes,
 .servicios,
 .portafolio {
-  margin: 80px auto;
+  margin: 0px auto;
+  padding: 60px 0px;
 }
 /* ////////////////////////////// INICIO ////////////////////////////// */
 
@@ -485,18 +486,12 @@ html {
 /* ========== FIN - MISION VISON ========== */
 
 /* ////////////////////////////// SERVICIOS ////////////////////////////// */
-.servicios {
-  margin: 80px auto;
-}
 
 .servicios__img {
   width: 70%;
 }
 
 /* ////////////////////////////// PORTAFOLIO ////////////////////////////// */
-.portafolio {
-  margin: 80px auto;
-}
 .portafolio__botones {
   max-width: 600px;
   display: flex;
@@ -874,17 +869,19 @@ html {
 
   .clientes,
   .portafolio {
-    margin: 40px auto 80px auto;
+    margin: 0px auto 20px auto;
   }
 
   .servicios, 
   .contacto {
-    margin: 40px auto 0px;
+    margin: 0px;
+    padding: 40px 0px;
   }
 
   .contacto {
     width: 90%;
-    height: 1070px;
+    margin: 0 auto;
+    height: 1090px;
     justify-content: space-between;
   }
 
@@ -956,7 +953,7 @@ html {
 
   .contacto {
     width: 85%;
-    height: 1150px;
+    height: 1170px;
   }
 
   .contacto__contenedorIzquierda {
