@@ -1,4 +1,5 @@
 /* ========== MAIN ========== */
+/* ////////////////////////////// INDEX.HTML ////////////////////////////// */
 /* ========== BIENVENIDA ========== */
 .bienvenida {
     &__video {
@@ -15,7 +16,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     z-index: 1;
-
+    
     &__contenedor {
         width: 40%;
         height: 300px;
@@ -63,7 +64,7 @@
         font-family: $fuente-secundario;
         font-weight: 700;
     }
-
+    
     &__contenedorLogos--link {
         display: inline-block;
         width: 155px;
@@ -73,4 +74,5 @@
         width: 100%;
     }
 }
-  
+/* ////////////////////////////// ACERCA.HTML ////////////////////////////// */
+

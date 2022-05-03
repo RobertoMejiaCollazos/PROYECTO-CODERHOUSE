@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* ========== FUENTES ========== */
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Roboto:wght@300;400;500;700&display=swap");
-/* ========== HEADER ========== */
+/*==  HEADER ==*/
 .header {
   position: relative;
   width: 100%;
@@ -9,12 +9,13 @@
   margin: 0 auto;
 }
 
-/*==  MENÚ ==*/
+/* ========== MENÚ ========== */
 .menu {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   padding-top: 15px;
+  font-family: "Lato", sans-serif;
 }
 
 .menu__img {
@@ -41,7 +42,6 @@
   text-decoration: none;
   font-size: 20px;
   color: #fff;
-  font-family: "Lato", sans-serif;
   padding-bottom: 10px;
   font-weight: 700;
 }
@@ -184,8 +184,8 @@
   }
 }
 
-/*==  PROPIEDADES QUE SE REPEITEN ==*/
-/* ========== CONTENEDORES IGUALES 1 ========== */
+/*==  PROPIEDADES QUE SE REPITEN ==*/
+/* ========== IGUALES 1 ========== */
 .row {
   margin: 0;
 }
@@ -232,7 +232,7 @@
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.245);
 }
 
-/* ========== CONTENEDORES IGUALES 2 ========== */
+/* ========== IGUALES 2 ========== */
 .equipo__contenedorEncabezado,
 .servicios__contenedorEncabezado,
 .portafolio__contenedoEncabezado,
@@ -266,33 +266,7 @@
   color: #000000;
 }
 
-.servicios__contenedor {
-  width: 100%;
-  padding: 30px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.servicios__parrafo {
-  font-family: "Lato", sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  text-align: center;
-  color: #000000;
-  padding-top: 7px;
-}
-
-.servicios__nombre {
-  font-family: "Lato", sans-serif;
-  text-align: center;
-  font-size: 20px;
-  font-weight: 700;
-}
-
-/* ========== CONTENEDORES IGUALES 3 ========== */
+/* ========== IGUALES 3 ========== */
 .clientes,
 .equipo,
 .servicios,
@@ -308,6 +282,7 @@
 }
 
 /* ========== MAIN ========== */
+/* ////////////////////////////// INDEX.HTML ////////////////////////////// */
 /* ========== BIENVENIDA ========== */
 .bienvenida__video {
   width: 100%;
@@ -379,11 +354,12 @@
   width: 100%;
 }
 
+/* ////////////////////////////// ACERCA.HTML ////////////////////////////// */
 /* ========== FOOTER ========== */
 .footer {
   position: relative;
   width: 100%;
-  font-family: "Roboto", sans-serif;
+  font-family: "Lato", sans-serif;
   background: linear-gradient(115deg, #00063b, #0010a3);
 }
 
@@ -398,7 +374,7 @@
 
 .text-small {
   font-size: 0.9rem;
-  color: write;
+  color: #fff;
 }
 
 .footer__titulo {
