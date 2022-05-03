@@ -1,0 +1,31 @@
+$color-primario: #0010a3;
+$color-secundario: #f0c016;
+$color-primario-hover: #00063b;
+$color-secundario-hover: #b39118;
+$color-blanco: #fff;
+$color-transparente: transparent;
+$color-linea-link: #ffffff98;
+
+$fondo-suscripcion: linear-gradient(rgba(0, 0, 0, 0.163), rgba(0, 0, 0, 0.779), rgba(0, 0, 0, 0.163)), url('../assets/img/fondos/fondo-negro.jpg');
+$fondo-footer: linear-gradient(115deg, #00063b, #0010a3);
+
+$fuente-principal: 'Lato', sans-serif;
+$fuente-secundario: 'Roboto', sans-serif; 
+
+$fuente-header: 20px;
+$fuente-titulo: 30px;
+$fuente-sub-titulo: 20px;
+$fuente-parrafo: 18px;
+$fuente-titulo-presentacion-desktop: 45px;
+$fuente-titulo-presentacion-tablet: 45px;
+$fuente-titulo-presentacion-movil: 40px;
+$fuente-parrafo-presentacion-desktop: 25px;
+$fuente-parrafo-presentacion-tablet: 25px;
+$fuente-parrafo-presentacion-movil: 25px;
+$fuente-btn: 20px;
+$fuente-footer: 16px;
+$line-height-parrafo: 1.7;
+
+$presentacion-titulo: 30px;
+$presentacion-parrafo: 18px;
+$presentacion-fondo: url(../assets/img/fondos/home.jpg);

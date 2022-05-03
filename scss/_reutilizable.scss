@@ -1,0 +1,49 @@
+/*==  PROPIEDADES QUE SE REPEITEN ==*/
+.row {
+    margin: 0;
+}
+
+.suscripcion ::placeholder,
+.footer ::placeholder {
+    padding-left: 15px;
+}
+
+.bienvenida, 
+.historia,
+.misionVision {
+  padding: 6rem 2rem;
+}
+
+.bienvenida__titulo,
+.historia__titulo,
+.misionVision__titulo,
+.contacto__titulo {
+  font-family: $fuente-secundario;
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.bienvenida__parrafo,
+.historia__parrafo,
+.misionVision__parrafo,
+.contacto__parrafo {
+  font-family: $fuente-secundario;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.clientes,
+.equipo,
+.servicios,
+.portafolio {
+  max-width: 1000px;
+}
+
+.clientes,
+.servicios,
+.portafolio {
+  margin: 0px auto;
+  padding: 60px 0px;
+}

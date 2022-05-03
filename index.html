@@ -14,54 +14,56 @@
     <!--  ANIMACIÓN AOS  -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--  ESTILOS  -->
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Mann - Soluciones de Tecnología</title>
 </head>
 
 <body>
     <!--  CABECERA  -->
     <header class="header" id="header">
-        <div class="header__contenedor">
-            <div class="header__div container">
-                <nav class="header__nav navbar navbar-expand-md navbar-dark">
-                    <div class="header__izquierda">
-                        <a class="header__a navbar-brand" href="index.html">
-                            <img class="header__logo" src="assets/img/logo.png" alt="logotipo color blanco">
+        <!--  MENÚ  -->
+        <div class="menu">
+            <div class="menu__div container">
+                <nav class="menu__nav navbar navbar-expand-md navbar-dark">
+                    <div class="menu__izquierda">
+                        <a class="menu__a navbar-brand" href="index.html">
+                            <img class="menu__img" src="assets/img/logo.png" alt="logotipo color blanco">
                         </a>
                     </div>
-                    <button class="header__button navbar-toggler" type="button" data-bs-toggle="collapse"
+                    <button class="menu__button navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="nav__icon navbar-toggler-icon"></span>
                     </button>
-                    <div class="header__derecha collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="header__ul navbar-nav ms-auto text-center">
-                            <li class="header__li nav-item">
-                                <a class="header__link nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    <div class="menu__derecha collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="menu__ul navbar-nav ms-auto text-center">
+                            <li class="menu__li nav-item">
+                                <a class="menu__link nav-link active" aria-current="page" href="index.html">Inicio</a>
                             </li>
-                            <li class="header__li nav-item">
-                                <a class="header__link nav-link" href="pages/acerca.html">Acerca</a>
+                            <li class="menu__li nav-item">
+                                <a class="menu__link nav-link" href="pages/acerca.html">Acerca</a>
                             </li>
-                            <li class="header__li nav-item">
-                                <a class="header__link nav-link" href="pages/servicios.html">Servicios</a>
+                            <li class="menu__li nav-item">
+                                <a class="menu__link nav-link" href="pages/servicios.html">Servicios</a>
                             </li>
-                            <li class="header__li nav-item">
-                                <a class="header__link nav-link" href="pages/portafolio.html">Portafolio</a>
+                            <li class="menu__li nav-item">
+                                <a class="menu__link nav-link" href="pages/portafolio.html">Portafolio</a>
                             </li>
-                            <li class="header__li nav-item">
-                                <a class="header__link nav-link" href="pages/contacto.html">Contacto</a>
+                            <li class="menu__li nav-item">
+                                <a class="menu__link nav-link" href="pages/contacto.html">Contacto</a>
                             </li>
                         </ul>
                     </div>
                 </nav>
             </div>
         </div>
+        <!--  FIN - MENÚ  -->
         <!--  PÁGINA DE PRESENTACION  -->
         <section class="presentacion presentacionUno" id="presentacion">
             <div class="presentacion__contenedor">
-                <div class="presentacion__contenedorIzquierda">
+                <div class="presentacion__izquierda">
                 </div>
-                <div class="presentacion__contenedorDerecha">
+                <div class="presentacion__derecha">
                     <h1 class="presentacion__titulo">Hacemos que la
                         <span class="presentacion__palabra">innovación</span> suceda
                     </h1>
@@ -72,9 +74,9 @@
         </section>
         <!--  FIN - PÁGINA DE PRESENTACION  -->
         <!--  ANIMACIÓN   -->
-        <div class="presentacion__contendorMouse">
-            <div class="presentacion__mouse">
-                <a class="presentacion__scrollEnlace" href="#bienvenida">--</a>
+        <div class="scroll">
+            <div class="scroll__mouse">
+                <a class="scroll__scrollLink" href="#bienvenida">--</a>
             </div>
         </div>
     </header>
@@ -89,17 +91,11 @@
                     <div class="bienvenida__izquierda col-12 col-lg-6" data-aos="fade-up">
                         <h2 class="bienvenida__titulo">Bienvenido</h2>
                         <p class="bienvenida__parrafo">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem corrupti adipisci doloribus
-                            obcaecati temporibus, aspernatur consequatur iure optio. Accusamus nemo iure, officiis
-                            labore
-                            necessitatibus expedita ea optio quo repudiandae porro odio eos iste consectetur a harum,
-                            aliquid
-                            magnam incidunt distinctio.
-                            obcaecati temporibus, aspernatur consequatur iure optio. Accusamus nemo iure, officiis
-                            labore
-                            necessitatibus expedita ea optio quo repudiandae porro odio eos iste consectetur a harum,
-                            aliquid
-                            magnam incidunt distinctio.
+                            Contamos con más de 7 años de experiencia construyendo soluciones que permitan generar un impacto positivo y cambio en las organizaciones para nuestros clientes de Perú y Latam.
+
+                            Estamos enfocados en comprender las necesidades de los usuarios y entregar valor rápidamente, utilizando metodologías UX y Lean y creando soluciones de software de alta disponibilidad a través de prácticas ágiles y DevOps. <br>
+
+                            Construimos soluciones que generen un impacto positivo en las organizaciones.
                         </p>
                     </div>
                     <div class="bienvenida__derecha col-12 col-lg-6" data-aos="fade-up">
@@ -125,7 +121,7 @@
 
         <!--  PÁGINA DE CLIENTES  -->
         <section class="clientes" id="clientes">
-            <div class="clientes__contenedor">
+            <div class="clientes__contenedor" data-aos="fade-up">
                 <h2 class="clientes__titulo">Nuestros Clientes</h2>
                 <div class="clientes__contenedorLogos container">
                     <div class="clientes__row row">

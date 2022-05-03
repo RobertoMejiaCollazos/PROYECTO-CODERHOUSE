@@ -1,0 +1,76 @@
+/* ========== MAIN ========== */
+/* ========== BIENVENIDA ========== */
+.bienvenida {
+    &__video {
+        width: 100%;
+    }
+}
+
+/* ========== SUSCRIPCIÓN ========== */
+.suscripcion {
+    width: 100%;
+    height: auto;
+    background: $fondo-suscripcion;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: 1;
+
+    &__contenedor {
+        width: 40%;
+        height: 300px;
+        margin: 0 auto;
+        padding-top: 80px;
+    }
+    
+    &__titulo {
+        margin-bottom: 30px;
+        text-align: center;
+        font-size: 30px;
+        color: #ffffff;
+        font-family: "Lato", sans-serif;
+        font-weight: 700;
+    }
+    
+    &__form {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+    }
+    
+    &__form--email {
+        width: 100%;
+        height: 40px;
+        border-radius: 5px;
+    }
+    
+    &__form--submit {
+        width: 100px;
+        height: 40px;
+        font-family: $fuente-secundario;
+        font-size: 20px;
+        background-color: #f0c016;
+        font-weight: 500;
+    }
+}
+
+/* ========== CLIENTES ========== */
+.clientes {
+    &__titulo {
+        margin-bottom: 30px;
+        text-align: center;
+        font-size: 30px;
+        font-family: $fuente-secundario;
+        font-weight: 700;
+    }
+
+    &__contenedorLogos--link {
+        display: inline-block;
+        width: 155px;
+    }
+    
+    &__contenedorLogos--img {
+        width: 100%;
+    }
+}
+  
