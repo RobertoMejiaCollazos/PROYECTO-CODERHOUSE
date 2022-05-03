@@ -12,6 +12,7 @@
     justify-content: space-evenly;
     align-items: center;
     padding-top: 15px;
+    font-family: $fuente-principal;
     
     &__img {
         width: 140px;
@@ -39,7 +40,6 @@
         text-decoration: none;
         font-size: $fuente-header;
         color: $color-blanco;
-        font-family: $fuente-principal;
         padding-bottom: 10px;
         font-weight: 700;
     
@@ -100,17 +100,17 @@
     &__titulo,
     &__parrafo {
         color: $color-blanco;
-        font-family: $fuente-principal;    
+        font-family: $fuente-secundario;    
     }
     
     &__titulo {
         font-size: $fuente-titulo-presentacion-desktop;
-        font-weight: 700;
+        font-weight: 500;
     }
 
     &__parrafo {
         font-size: $fuente-parrafo-presentacion-desktop;
-        font-weight: 500;
+        font-weight: 300;
     }
     
     &__palabra {
