@@ -14,65 +14,66 @@
     <!--  ANIMACIÓN AOS  -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--  ESTILOS  -->
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>PORTAFOLIO</title>
 </head>
 
 <body>
     <!--  CABECERA  -->
     <header class="header" id="header">
-        <div class="header__contenedor">
-            <div class="header__div container">
-                <nav class="header__nav navbar navbar-expand-md navbar-dark">
-                    <div class="header__izquierda">
-                        <a class="header__a navbar-brand" href="../index.html">
-                            <img class="header__logo" src="../assets/img/logo.png" alt="logotipo color blanco">
+        <!--  MENÚ  -->
+        <div class="menu">
+            <div class="menu__div container">
+                <nav class="menu__nav navbar navbar-expand-md navbar-dark">
+                    <div class="menu__izquierda">
+                        <a class="menu__a navbar-brand" href="../index.html">
+                            <img class="menu__img" src="../assets/img/logo.png" alt="logotipo color blanco">
                         </a>
                     </div>
-                    <button class="header__button navbar-toggler" type="button" data-bs-toggle="collapse"
+                    <button class="menu__button navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="nav__icon navbar-toggler-icon"></span>
                     </button>
-                    <div class="header__derecha collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="header__ul navbar-nav ms-auto text-center">
-                            <li class="header__li nav-item">
-                                <a class="header__link nav-link" href="../index.html">Inicio</a>
+                    <div class="menu__derecha collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="menu__ul navbar-nav ms-auto text-center">
+                            <li class="menu__li nav-item">
+                                <a class="menu__link nav-link" href="../index.html">Inicio</a>
                             </li>
-                            <li class="header__li nav-item">
-                                <a class="header__link nav-link" href="acerca.html">Acerca</a>
+                            <li class="menu__li nav-item">
+                                <a class="menu__link nav-link" href="acerca.html">Acerca</a>
                             </li>
-                            <li class="header__li nav-item">
-                                <a class="header__link nav-link" href="servicios.html">Servicios</a>
+                            <li class="menu__li nav-item">
+                                <a class="menu__link nav-link" href="servicios.html">Servicios</a>
                             </li>
-                            <li class="header__li nav-item">
-                                <a class="header__link nav-link active" aria-current="page"
-                                    href="portafolio.html">Portafolio</a>
+                            <li class="menu__li nav-item">
+                                <a class="menu__link nav-link active" aria-current="page" href="portafolio.html">Portafolio</a>
                             </li>
-                            <li class="header__li nav-item">
-                                <a class="header__link nav-link" href="contacto.html">Contacto</a>
+                            <li class="menu__li nav-item">
+                                <a class="menu__link nav-link" href="contacto.html">Contacto</a>
                             </li>
                         </ul>
                     </div>
                 </nav>
             </div>
         </div>
+        <!--  FIN - MENÚ  -->
         <!--  PÁGINA DE PRESENTACION  -->
         <section class="presentacion presentacionCuatro" id="presentacion">
             <div class="presentacion__contenedor">
-                <div class="presentacion__contenedorIzquierda">
+                <div class="presentacion__izquierda">
                 </div>
-                <div class="presentacion__contenedorDerecha">
+                <div class="presentacion__derecha">
                     <h1 class="presentacion__titulo"><span class="presentacion__palabra">Portafolio</span></h1>
                     <p class="presentacion__parrafo">Cuéntanos el proyecto que tienes en mente y con gusto recibirás una asesoría de nuestros especialistas.</p>
                 </div>
             </div>
         </section>
         <!--  FIN - PÁGINA DE PRESENTACION  -->
-        <!--  ANIMACIÓN   -->
-        <div class="presentacion__contendorMouse">
-            <div class="presentacion__mouse">
-                <a class="presentacion__scrollEnlace" href="#portafolio">SC</a>
+        <!--  ANIMACIÓN SCROLL  -->
+        <div class="scroll">
+            <div class="scroll__mouse">
+                <a class="scroll__scrollLink" href="#portafolio">--</a>
             </div>
         </div>
     </header>
@@ -81,7 +82,7 @@
     <!--  CONTENIDO PRINCIPAL DE LA PÁGINA  -->
     <main class="main">
         <!--  PÁGINA PORTAFOLIO  -->
-        <section class="portafolio" id="portafolio" data-aos="fade-up">
+        <section class="portafolio" id="portafolio">
             <div class="portafolio__contenedoEncabezado">
                 <h2 class="portafolio__titulo">Nuestro portafolio.</h2>
                 <p class="portafolio__parrafo">Tu proyecto es nuestra prioridad: Trabajamos en tu proyecto con creatividad y dedicación.</p>
@@ -104,7 +105,7 @@
             </div>
 
             <!--  GALERÍA DE IMÁGENES  -->
-            <div class="portafolio__contenedorGaleria container">
+            <div class="portafolio__contenedorGaleria container" data-aos="fade-up">
                 <div class="portafolio__row row">
                     <div class="portafolio__div col-lg-4 col-md-6 col-sm-12">
                         <a class="portafolio__a" href="#" data-bs-toggle="modal" data-bs-target="#modalImage1">

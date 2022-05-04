@@ -276,15 +276,16 @@
 
 .equipo__parrafo,
 .servicios__parrafo,
-.portafolio__parrafo
+.portafolio__parrafo,
 .contacto__parrafo {
-  width: 100%;
+  width: 80%;
   text-align: center;
   color: #000000;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 18px !important;
   line-height: 1.7;
+  margin: 0 auto;
 }
 
 /* ========== IGUALES 3 ========== */
@@ -408,6 +409,160 @@
   font-size: 25px;
   color: #fff;
   margin: 5px 5px 0px 5px;
+}
+
+/* ========== MISION VISON ========== */
+/* ////////////////////////////// SERVICIOS ////////////////////////////// */
+.servicios__contenedor {
+  width: 100%;
+  padding: 30px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.servicios__nombre {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.servicios__img {
+  width: 70%;
+}
+
+/* ////////////////////////////// PORTAFOLIO ////////////////////////////// */
+.portafolio__botones {
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  gap: 5px;
+}
+
+.portafolio__ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.portafolio__ul--btn {
+  padding: 0;
+}
+
+.portafolio__li, .portafolio__li--btn {
+  list-style: none;
+  background-color: #0010a3;
+  padding: 10px 25px;
+  border-radius: 5px;
+  margin: 20px 5px 0px 5px;
+  color: #fff;
+}
+
+.portafolio__li:hover, .portafolio__li--btn:hover {
+  background-color: #00063b;
+  color: inherit;
+}
+
+.portafolio__link, .portafolio__link--btn {
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+.portafolio__link:hover, .portafolio__link--btn:hover {
+  color: #fff;
+}
+
+.portafolio__div {
+  padding: 5px;
+}
+
+.portafolio__img {
+  width: 100%;
+  object-fit: cover;
+  padding-top: 15px;
+}
+
+/* ////////////////////////////// CONTACTO ////////////////////////////// */
+.contacto {
+  max-width: 960px;
+  width: 75%;
+  height: 700px;
+  margin: 40px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contacto__contenedorEncabezado {
+  max-width: 960px;
+}
+
+.contacto__contenedorDerecha, .contacto__contenedorIzquierda {
+  width: 46%;
+  max-width: 500px;
+  margin-top: 0;
+  height: 500px;
+}
+
+.contacto__label {
+  font-family: "Roboto", sans-serif;
+  color: #0010a3;
+  font-size: 20px;
+  display: block;
+  font-weight: 400;
+}
+
+.contacto__input, .contacto__textarea {
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.contacto__textarea {
+  height: 150px;
+}
+
+.contacto__btn {
+  background-color: transparent;
+  border: 2px solid #0010a3;
+  color: #0010a3;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+}
+
+.contacto__btn:hover {
+  color: #ffffff;
+  background-color: #0010a3;
+  border: 2px solid #0010a3;
+}
+
+.contacto__informacion {
+  padding: 30px 20px 60px 20px;
+  background-color: #0010a3;
+  border-radius: 10px;
+}
+
+.contacto__info {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  display: block;
+  padding-bottom: 15px;
+}
+
+.contacto__icono {
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 10px;
 }
 
 /* ========== FOOTER ========== */

@@ -110,3 +110,166 @@
         margin: 5px 5px 0px 5px;
     }
 }
+
+/* ========== MISION VISON ========== */
+
+/* ////////////////////////////// SERVICIOS ////////////////////////////// */
+.servicios {
+    &__contenedor {
+        width: 100%;
+        padding: 30px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    &__nombre {
+        font-family: $fuente-secundario;
+        text-align: center;
+        font-size: 20px;
+        font-weight: $fuente-700;
+    }
+      
+    &__img {
+        width: 70%;
+    }
+}
+
+/* ////////////////////////////// PORTAFOLIO ////////////////////////////// */
+.portafolio {
+    &__botones {
+        max-width: 600px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        gap: 5px;
+    }
+    
+    &__ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0;
+
+        &--btn {
+            padding: 0;
+        }
+    }
+      
+    &__li,
+    &__li--btn {
+        list-style: none;
+        background-color: $color-primario;
+        padding: 10px 25px;
+        border-radius: 5px;
+        margin: 20px 5px 0px 5px;
+        color: $color-blanco;
+
+        &:hover{
+            background-color: $color-primario-hover;
+            color: inherit;  
+        }
+    }
+      
+    &__link,
+    &__link--btn {
+        text-decoration: none;
+        font-size: $fuente-btn;
+        color: $color-blanco;
+        font-family: $fuente-secundario;
+
+        &:hover {
+            color: $color-blanco;
+        }
+    }
+      
+    &__div {
+        padding: 5px;
+    }
+      
+    &__img {
+        width: 100%;
+        object-fit: cover;
+        padding-top: 15px;
+    }
+}
+
+/* ////////////////////////////// CONTACTO ////////////////////////////// */
+.contacto {
+    max-width: 960px;
+    width: 75%;
+    height: 700px;
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &__contenedorEncabezado {
+        max-width: 960px;
+    }
+    
+    &__contenedorDerecha,
+    &__contenedorIzquierda {
+        width: 46%;
+        max-width: 500px;
+        margin-top: 0;
+        height: 500px;
+    }
+    
+    &__label {
+        font-family: $fuente-secundario;
+        color: $color-primario;
+        font-size: $fuente-btn;
+        display: block;
+        font-weight: $fuente-400;
+    }
+    
+    &__input,
+    &__textarea {
+        width: 100%;
+        height: 30px;
+        border-radius: 5px;
+    }
+    
+    &__textarea {
+        height: 150px;
+    }
+    
+    &__btn {
+        background-color: $color-transparente;
+        border: 2px solid $color-primario;
+        color: $color-primario;
+        font-weight: $fuente-500;
+        font-family: $fuente-secundario;
+
+        &:hover {
+            color: #ffffff;
+            background-color: $color-primario;
+            border: 2px solid $color-primario;
+        }
+    }
+    
+    &__informacion {
+        padding: 30px 20px 60px 20px;
+        background-color: $color-primario;
+        border-radius: 10px;
+    }
+    
+    &__info {
+        color: $color-blanco;
+        font-family: $fuente-secundario;
+        font-size: $fuente-parrafo;
+        display: block;
+        padding-bottom: 15px;
+    }
+    
+    &__icono {
+        color: $color-blanco;
+        font-size: $fuente-btn;
+        padding: 10px 10px;
+    }
+}

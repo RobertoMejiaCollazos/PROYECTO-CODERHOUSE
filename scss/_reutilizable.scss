@@ -60,7 +60,7 @@
 
 .equipo__titulo,
 .servicios__titulo,
-.portafolio__titulo {
+.portafolio__titulo { 
   font-family: $fuente-secundario;
   font-size: $fuente-titulo;
   margin-bottom: 30px;
@@ -71,15 +71,16 @@
 
 .equipo__parrafo,
 .servicios__parrafo,
-.portafolio__parrafo
+.portafolio__parrafo,
 .contacto__parrafo {
-  width: 100%;
+  width: 80%;
   text-align: center;
   color: #000000;
   font-family: $fuente-secundario;
   font-weight: $fuente-400;
   font-size: $fuente-parrafo !important;
   line-height: 1.7;
+  margin: 0 auto;
 }
 
 /* ========== IGUALES 3 ========== */
