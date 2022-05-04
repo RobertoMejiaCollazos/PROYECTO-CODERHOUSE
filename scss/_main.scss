@@ -25,12 +25,8 @@
     }
     
     &__titulo {
-        margin-bottom: 30px;
         text-align: center;
-        font-size: 30px;
-        color: #ffffff;
-        font-family: "Lato", sans-serif;
-        font-weight: 700;
+        color: $color-blanco;
     }
     
     &__form {
@@ -49,20 +45,18 @@
         width: 100px;
         height: 40px;
         font-family: $fuente-secundario;
-        font-size: 20px;
-        background-color: #f0c016;
+        font-size: $fuente-btn;
+        background-color: $color-secundario;
         font-weight: 500;
+        border-radius: 5px;
     }
 }
 
 /* ========== CLIENTES ========== */
 .clientes {
     &__titulo {
-        margin-bottom: 30px;
         text-align: center;
-        font-size: 30px;
-        font-family: $fuente-secundario;
-        font-weight: 700;
+        color: $color-negro;
     }
     
     &__contenedorLogos--link {
@@ -75,4 +69,44 @@
     }
 }
 /* ////////////////////////////// ACERCA.HTML ////////////////////////////// */
+/* ========== HISTORIA ========== */
 
+/* ========== EQUIPO ========== */
+.equipo {
+    margin: 0 auto;
+
+    &__contenedorIntegrantes {
+        padding: 30px;
+    }
+    
+    &__informacion {
+        background-color: $color-primario;
+    }
+    
+    &__img {
+        width: 100%;
+    }
+    
+    &__nombre,
+    &__funcion {
+        color: $color-blanco;
+    }
+    
+    .equipo__nombre {
+        font-size: $fuente-sub-titulo;
+    }
+    
+    .equipo__funcion {
+        font-size: $fuente-parrafo;
+    }
+    
+    .equipo__link {
+        text-decoration: none;
+    }
+    
+    .equipo__icono {
+        font-size: 25px;
+        color: $color-blanco;
+        margin: 5px 5px 0px 5px;
+    }
+}

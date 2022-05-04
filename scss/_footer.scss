@@ -4,6 +4,7 @@
     width: 100%;
     font-family: $fuente-principal;
     background: $fondo-footer;
+    font-size: $fuente-footer;
 
     &__rowUno {
         margin-right: 0;
@@ -12,7 +13,7 @@
 
 .text-muted {
     --bs-text-opacity: 1;
-    color: #f0c016 !important;
+    color: $color-secundario !important;
 }
 
 .text-small {

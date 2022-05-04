@@ -16,13 +16,15 @@
 }
 
 .bienvenida__titulo,
+.suscripcion__titulo,
+.clientes__titulo,
 .historia__titulo,
 .misionVision__titulo,
 .contacto__titulo {
   font-family: $fuente-secundario;
-  font-size: 30px;
+  font-size: $fuente-titulo;
   margin-bottom: 30px;
-  font-weight: 700;
+  font-weight: $fuente-700;
 }
 
 .historia__titulo,
@@ -35,8 +37,8 @@
 .misionVision__parrafo,
 .contacto__parrafo {
   font-family: $fuente-secundario;
-  font-weight: 400;
-  font-size: 18px;
+  font-weight: $fuente-400;
+  font-size: $fuente-parrafo;
   line-height: 1.7;
 }
 
@@ -59,10 +61,10 @@
 .equipo__titulo,
 .servicios__titulo,
 .portafolio__titulo {
-  font-family: "Lato", sans-serif;
-  font-size: 30px;
+  font-family: $fuente-secundario;
+  font-size: $fuente-titulo;
   margin-bottom: 30px;
-  font-weight: 700;
+  font-weight: $fuente-700;
   color: #000000;
   text-align: center;
 }
@@ -72,12 +74,12 @@
 .portafolio__parrafo
 .contacto__parrafo {
   width: 100%;
-  font-family: "Lato", sans-serif;
-  font-weight: 500;
-  font-size: 18px !important;
-  line-height: 1.7;
   text-align: center;
   color: #000000;
+  font-family: $fuente-secundario;
+  font-weight: $fuente-400;
+  font-size: $fuente-parrafo !important;
+  line-height: 1.7;
 }
 
 /* ========== IGUALES 3 ========== */

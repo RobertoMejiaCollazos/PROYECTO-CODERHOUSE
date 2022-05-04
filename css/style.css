@@ -16,6 +16,7 @@
   align-items: center;
   padding-top: 15px;
   font-family: "Lato", sans-serif;
+  font-weight: 700;
 }
 
 .menu__img {
@@ -43,7 +44,6 @@
   font-size: 20px;
   color: #fff;
   padding-bottom: 10px;
-  font-weight: 700;
 }
 
 .menu__link::after {
@@ -74,7 +74,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-image: url(../assets/img/fondos/home.jpg);
   z-index: -1;
 }
 
@@ -87,13 +86,13 @@
 }
 
 .presentacion__izquierda {
-  width: 480px;
+  width: 500px;
   height: auto;
   display: inline-block;
 }
 
 .presentacion__derecha {
-  max-width: 480px;
+  max-width: 500px;
   height: auto;
   display: inline-block;
   padding: 30px;
@@ -118,6 +117,26 @@
   padding: 0px 10px;
   background-color: #fff;
   color: #0010a3;
+}
+
+.presentacionUno {
+  background-image: url(../assets/img/fondos/home.jpg);
+}
+
+.presentacionDos {
+  background-image: url(../assets/img/fondos/acerca.jpg);
+}
+
+.presentacionTres {
+  background-image: url(../assets/img/fondos/servicios.jpg);
+}
+
+.presentacionCuatro {
+  background-image: url(../assets/img/fondos/portafolio.jpg);
+}
+
+.presentacionCinco {
+  background-image: url(../assets/img/fondos/contacto.jpg);
 }
 
 /*==  SCROLL==*/
@@ -202,6 +221,8 @@
 }
 
 .bienvenida__titulo,
+.suscripcion__titulo,
+.clientes__titulo,
 .historia__titulo,
 .misionVision__titulo,
 .contacto__titulo {
@@ -245,7 +266,7 @@
 .equipo__titulo,
 .servicios__titulo,
 .portafolio__titulo {
-  font-family: "Lato", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 30px;
   margin-bottom: 30px;
   font-weight: 700;
@@ -258,12 +279,12 @@
 .portafolio__parrafo
 .contacto__parrafo {
   width: 100%;
-  font-family: "Lato", sans-serif;
-  font-weight: 500;
-  font-size: 18px !important;
-  line-height: 1.7;
   text-align: center;
   color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px !important;
+  line-height: 1.7;
 }
 
 /* ========== IGUALES 3 ========== */
@@ -307,12 +328,8 @@
 }
 
 .suscripcion__titulo {
-  margin-bottom: 30px;
   text-align: center;
-  font-size: 30px;
-  color: #ffffff;
-  font-family: "Lato", sans-serif;
-  font-weight: 700;
+  color: #fff;
 }
 
 .suscripcion__form {
@@ -334,15 +351,13 @@
   font-size: 20px;
   background-color: #f0c016;
   font-weight: 500;
+  border-radius: 5px;
 }
 
 /* ========== CLIENTES ========== */
 .clientes__titulo {
-  margin-bottom: 30px;
   text-align: center;
-  font-size: 30px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
+  color: #000000;
 }
 
 .clientes__contenedorLogos--link {
@@ -355,12 +370,53 @@
 }
 
 /* ////////////////////////////// ACERCA.HTML ////////////////////////////// */
+/* ========== HISTORIA ========== */
+/* ========== EQUIPO ========== */
+.equipo {
+  margin: 0 auto;
+}
+
+.equipo__contenedorIntegrantes {
+  padding: 30px;
+}
+
+.equipo__informacion {
+  background-color: #0010a3;
+}
+
+.equipo__img {
+  width: 100%;
+}
+
+.equipo__nombre, .equipo__funcion {
+  color: #fff;
+}
+
+.equipo .equipo__nombre {
+  font-size: 20px;
+}
+
+.equipo .equipo__funcion {
+  font-size: 18px;
+}
+
+.equipo .equipo__link {
+  text-decoration: none;
+}
+
+.equipo .equipo__icono {
+  font-size: 25px;
+  color: #fff;
+  margin: 5px 5px 0px 5px;
+}
+
 /* ========== FOOTER ========== */
 .footer {
   position: relative;
   width: 100%;
   font-family: "Lato", sans-serif;
   background: linear-gradient(115deg, #00063b, #0010a3);
+  font-size: 16px;
 }
 
 .footer__rowUno {
