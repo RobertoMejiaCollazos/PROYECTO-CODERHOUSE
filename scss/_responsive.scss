@@ -1,0 +1,27 @@
+/* ========== TABLETS ========== */
+@media (max-width: 768px) {
+    .menu {
+        &__li {
+            background-color: #ffffff;
+            color: #0010a3;
+            
+            &:hover {
+                background-color: #0010a3;
+                color: #ffffff;
+            }
+        }
+        
+        &__link {
+            color: #0010a3 !important;
+            
+            &::after {
+                display: none !important;
+            }
+            
+            &:hover {
+                color: inherit !important;
+            }
+        }
+        
+    }
+}

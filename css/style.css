@@ -234,7 +234,7 @@
 
 .historia__titulo,
 .misionVision__titulo {
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 .bienvenida__parrafo,
@@ -258,7 +258,7 @@
 .servicios__contenedorEncabezado,
 .portafolio__contenedoEncabezado,
 .contacto__contenedorEncabezado {
-  width: calc(100% - 40px);
+  width: calc(100% - 100px);
   margin: 0 auto;
   text-align: center;
 }
@@ -489,5 +489,26 @@
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.548);
   overflow: hidden;
   text-decoration: none;
+}
+
+/* ========== TABLETS ========== */
+@media (max-width: 768px) {
+  .menu__li {
+    background-color: #ffffff;
+    color: #0010a3;
+  }
+  .menu__li:hover {
+    background-color: #0010a3;
+    color: #ffffff;
+  }
+  .menu__link {
+    color: #0010a3 !important;
+  }
+  .menu__link::after {
+    display: none !important;
+  }
+  .menu__link:hover {
+    color: inherit !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */
