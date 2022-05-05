@@ -141,12 +141,12 @@
 
 /*==  SCROLL==*/
 .scroll {
-  width: 100px;
-  position: relative;
-  height: 100px;
+  width: 25px;
+  position: absolute;
+  height: 110px;
   background-color: transparent;
-  margin: 0 auto;
-  top: 70%;
+  right: calc(50% - 12.5px);
+  bottom: 0%;
 }
 
 .scroll__mouse {
@@ -174,13 +174,15 @@
 }
 
 .scroll__scrollLink {
+  height: 40px;
   position: absolute;
-  top: -20px;
-  left: -10px;
-  font-size: 50px;
+  top: 0px;
+  left: 0px;
+  font-size: 30px;
   text-align: center;
   opacity: 0;
   background-color: #fff;
+  cursor: pointer;
 }
 
 @keyframes mouse-bola {
@@ -646,8 +648,53 @@
   text-decoration: none;
 }
 
+/* ////////////////////////////// MEDIAS QUERIES ////////////////////////////// */
+/* ========== TABLETS ========== */
+@media (max-width: 992px) {
+  .portafolio__div--oculto {
+    display: none !important;
+  }
+}
+
 /* ========== TABLETS ========== */
 @media (max-width: 768px) {
+  .menu__li {
+    background-color: #fff;
+    color: #0010a3;
+  }
+  .menu__li:hover {
+    background-color: #0010a3;
+    color: #fff;
+  }
+  .menu__link {
+    color: #0010a3 !important;
+  }
+  .menu__link::after {
+    display: none !important;
+  }
+  .menu__link:hover {
+    color: inherit !important;
+  }
+  .presentacion__izquierda {
+    width: 0px;
+  }
+  .presentacion__derecha {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .presentacion__titulo {
+    font-size: 45px;
+  }
+  .presentacion__parrafo {
+    font-size: 25px;
+  }
+  .scroll {
+    height: 100px;
+  }
+}
+
+/* ========== MÓVIL ========== */
+@media (max-width: 480px) {
   .menu__li {
     background-color: #ffffff;
     color: #0010a3;
@@ -664,6 +711,29 @@
   }
   .menu__link:hover {
     color: inherit !important;
+  }
+  .presentacion__titulo {
+    font-size: 35px;
+  }
+  .presentacion__parrafo {
+    font-size: 20px;
+  }
+  .scroll {
+    height: 80px;
+  }
+}
+
+/* ========== MÓVIL ========== */
+@media (max-width: 320px) {
+  .presentacion__titulo {
+    font-size: 30px;
+  }
+  .presentacion__parrafo {
+    font-size: 18px;
+    line-height: 1.3;
+  }
+  .scroll {
+    height: 60px;
   }
 }
 /*# sourceMappingURL=style.css.map */
