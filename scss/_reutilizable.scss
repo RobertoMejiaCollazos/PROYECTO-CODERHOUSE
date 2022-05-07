@@ -51,7 +51,7 @@
 /* ========== IGUALES 2 ========== */
 .equipo__contenedorEncabezado,
 .servicios__contenedorEncabezado,
-.portafolio__contenedoEncabezado,
+.portafolio__contenedorEncabezado,
 .contacto__contenedorEncabezado {
   width: calc(100% - 100px);
   margin: 0 auto;
@@ -72,13 +72,13 @@
 .equipo__parrafo,
 .servicios__parrafo,
 .portafolio__parrafo,
-.contacto__parrafo {
-  width: 80%;
+.contacto__parrafo{
+  width: 85%;
   text-align: center;
   color: #000000;
   font-family: $fuente-secundario;
   font-weight: $fuente-400;
-  font-size: $fuente-parrafo !important;
+  font-size: $fuente-parrafo;
   line-height: 1.7;
   margin: 0 auto;
 }
@@ -93,7 +93,8 @@
 
 .clientes,
 .servicios,
-.portafolio {
+.portafolio,
+.contacto {
   margin: 0px auto;
   padding: 60px 0px;
 }

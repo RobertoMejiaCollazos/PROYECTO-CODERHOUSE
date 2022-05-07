@@ -1,9 +1,18 @@
 /* ////////////////////////////// MEDIAS QUERIES ////////////////////////////// */
 /* ========== TABLETS ========== */
 @media (max-width: 992px) {
+    .misionVision {
+        padding: 0rem 0rem 2.5rem 0rem;
+
+        &__titulo {
+            text-align: center;
+        }
+    }
+
     .portafolio__div--oculto {
       display: none !important;
     }
+
 }
 /* ========== TABLETS ========== */
 @media (max-width: 768px) {
@@ -49,27 +58,90 @@
         }
     }
 
-    .scroll {
-        height: 100px;
+    .bienvenida {
+        padding: 2rem 0rem;
+        
+        &__titulo {
+            text-align: center;
+        }
+    }
+
+    .suscripcion {
+        &__contenedor {
+            width: 70%;
+        }
+    }
+
+    .historia {
+        padding: 2.5rem 0rem;
+        
+        &__titulo {
+            text-align: center;
+        }
     }
     
+    .equipo {
+        &__contenedorEncabezado {
+            width: calc(100% - 44px);
+        }
+        
+        &__parrafo {
+            width: 100%;
+        }
+    
+    }
+
+    .servicios {
+        &__contenedorEncabezado {
+            width: calc(100% - 44px);
+        }
+    }
+
+    .portafolio {
+        &__contenedorEncabezado {
+            width: calc(100% - 44px);
+        }
+    }
+
+    .contacto {
+        height: 1100px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;       
+
+        &__derecha,
+        &__izquierda {
+            width: 100%;
+        }
+      
+        &__izquierda {
+            height: 400px;
+        }
+      
+        &__derecha {
+            height: 340px;
+        }
+    }
+    
+
 }
 
 /* ========== MÓVIL ========== */
 @media (max-width: 480px) {
     .menu {
         &__li {
-            background-color: #ffffff;
-            color: #0010a3;
+            background-color: $color-blanco;
+            color: $color-primario;
             
             &:hover {
-                background-color: #0010a3;
-                color: #ffffff;
+                background-color: $color-primario;
+                color: $color-blanco;
             }
         }
         
         &__link {
-            color: #0010a3 !important;
+            color: $color-primario !important;
             
             &::after {
                 display: none !important;
@@ -91,8 +163,93 @@
 
     }
 
-    .scroll {
-        height: 80px;
+    .bienvenida {
+        &__titulo {
+            font-size: $fuente-titulo-480;
+        }
+        &__parrafo {
+            font-size: $fuente-parrafo-480;
+        }
+    }
+    
+    .suscripcion {
+        &__contenedor {
+            width: 85%;
+        }
+    }
+
+    .historia {
+        &__parrafo {
+            font-size: $fuente-parrafo-480;
+        }
+    }
+
+    .equipo {
+        &__contenedorEncabezado {
+            width: calc(100% - 50px);
+        }
+
+        &__titulo {
+            font-size: $fuente-titulo-480;
+        }
+
+        &__parrafo {
+            width: 100%;
+            font-size: $fuente-parrafo-480;
+        }
+
+        &__contenedorIntegrantes {
+            padding-bottom: 0;
+        }
+    }
+
+    .misionVision {
+        padding: 0rem 0rem 2.5rem 0rem;
+
+        &__titulo {
+            font-size: $fuente-titulo-480;
+        }
+
+        &__parrafo {
+            font-size: $fuente-parrafo-480;
+        }
+    }
+
+    .servicios,
+    .portafolio {
+        padding: 2rem 0rem 2.5rem 0rem;
+
+        &__titulo {
+            font-size: $fuente-titulo-480;
+        }
+
+        &__parrafo {
+            font-size: $fuente-parrafo-480;
+            width: 100%;
+        }
+    }
+
+    .contacto {
+        width: 90%;
+        height: 1140px;
+        justify-content: space-between;
+
+        &__titulo {
+            font-size: $fuente-titulo-480;
+        }
+
+        &__parrafo {
+            font-size: $fuente-parrafo-480;
+        }
+
+        &__izquierda {
+            height: 400px;
+        }
+      
+        &__derecha {
+            height: 400px;
+        }
+
     }
     
 }
@@ -109,7 +266,20 @@
         }      
     }
 
-    .scroll {
-        height: 60px;
+    .bienvenida {
+        padding: 2rem 0rem;
     }
+
+    .contacto {
+        width: 85%;
+        height: 1150px;
+        
+        &__izquierda {
+            height: 400px;
+        }
+      
+        &__derecha {
+            height: 380px;
+        }
+    }    
 }

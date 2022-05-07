@@ -63,6 +63,18 @@
     }
 }
 
+.navbar-dark .navbar-toggler {
+    border: none;
+}
+
+.navbar-dark .navbar-toggler:focus {
+    border: none;
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-image: url(../assets/img/menu/menu-blanco.png);
+}
+
 /*==  PRESENTACIÓN ==*/
 .presentacion {
     position: absolute;
@@ -140,10 +152,10 @@
 .scroll {
     width: 25px;
     position: absolute;
-    height: 110px;
+    height: 40px;
     background-color: $color-transparente;
     right: calc(50% - 12.5px);
-    bottom: 0%;
+    bottom: 5%;
     
     &__mouse {
         display: block;
