@@ -505,7 +505,6 @@
   padding-top: 15px;
 }
 
-/*==  MODAL ==*/
 /* ////////////////////////////// CONTACTO ////////////////////////////// */
 .contacto {
   max-width: 960px;
@@ -567,23 +566,38 @@
 }
 
 .contacto__informacion {
+  width: 100%;
   padding: 30px 20px 60px 20px;
   background-color: #0010a3;
   border-radius: 10px;
+  display: block;
+}
+
+.contacto__datos {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
 }
 
 .contacto__info {
+  height: 10px;
   color: #fff;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
-  display: block;
-  padding-bottom: 15px;
+  display: inline-block;
+}
+
+.contacto__info--alto {
+  height: auto;
+  margin-bottom: 0;
 }
 
 .contacto__icono {
+  height: 15px;
   color: #fff;
   font-size: 20px;
-  padding: 10px 10px;
+  display: inline-block;
+  padding: 0px 20px;
 }
 
 /* ========== FOOTER ========== */
@@ -832,7 +846,7 @@
   }
   .contacto {
     width: 90%;
-    height: 1140px;
+    height: 1050px;
     justify-content: space-between;
   }
   .contacto__titulo {
@@ -845,7 +859,7 @@
     height: 400px;
   }
   .contacto__derecha {
-    height: 400px;
+    height: 300px;
   }
 }
 
@@ -863,13 +877,13 @@
   }
   .contacto {
     width: 85%;
-    height: 1150px;
+    height: 1100px;
   }
   .contacto__izquierda {
     height: 400px;
   }
   .contacto__derecha {
-    height: 380px;
+    height: 320px;
   }
 }
 /*# sourceMappingURL=style.css.map */
