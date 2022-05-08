@@ -865,6 +865,9 @@
   .contacto__derecha {
     height: 250px;
   }
+  .contacto__info {
+    font-size: 16px;
+  }
 }
 
 /* ========== MÓVIL ========== */
