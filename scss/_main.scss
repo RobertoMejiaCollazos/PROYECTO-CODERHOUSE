@@ -225,6 +225,10 @@
         height: 500px;
     }
     
+    &__derecha {
+        min-height: 300px;
+    }
+
     &__label {
         font-family: $fuente-secundario;
         color: $color-primario;
@@ -260,7 +264,7 @@
     
     &__informacion {
         width: 100%;
-        padding: 30px 20px 60px 20px;
+        padding: 30px 20px 30px 20px;
         background-color: $color-primario;
         border-radius: 10px;
         display: block;

@@ -364,7 +364,7 @@
   width: 100px;
   height: 40px;
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   background-color: #f0c016;
   font-weight: 500;
   border-radius: 5px;
@@ -486,7 +486,7 @@
 
 .portafolio__link, .portafolio__link--btn {
   text-decoration: none;
-  font-size: 20px;
+  font-size: 18px;
   color: #fff;
   font-family: "Roboto", sans-serif;
 }
@@ -533,10 +533,14 @@
   height: 500px;
 }
 
+.contacto__derecha {
+  min-height: 300px;
+}
+
 .contacto__label {
   font-family: "Roboto", sans-serif;
   color: #0010a3;
-  font-size: 20px;
+  font-size: 18px;
   display: block;
   font-weight: 400;
 }
@@ -567,7 +571,7 @@
 
 .contacto__informacion {
   width: 100%;
-  padding: 30px 20px 60px 20px;
+  padding: 30px 20px 30px 20px;
   background-color: #0010a3;
   border-radius: 10px;
   display: block;
@@ -595,7 +599,7 @@
 .contacto__icono {
   height: 15px;
   color: #fff;
-  font-size: 20px;
+  font-size: 18px;
   display: inline-block;
   padding: 0px 20px;
 }
@@ -846,7 +850,7 @@
   }
   .contacto {
     width: 90%;
-    height: 1050px;
+    height: 1020px;
     justify-content: space-between;
   }
   .contacto__titulo {
@@ -859,7 +863,7 @@
     height: 400px;
   }
   .contacto__derecha {
-    height: 300px;
+    height: 250px;
   }
 }
 
@@ -877,13 +881,13 @@
   }
   .contacto {
     width: 85%;
-    height: 1100px;
+    height: 1070px;
   }
   .contacto__izquierda {
     height: 400px;
   }
   .contacto__derecha {
-    height: 320px;
+    height: 300px;
   }
 }
 /*# sourceMappingURL=style.css.map */
