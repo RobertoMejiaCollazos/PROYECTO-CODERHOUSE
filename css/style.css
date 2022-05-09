@@ -230,8 +230,7 @@
   margin: 0;
 }
 
-.suscripcion ::placeholder,
-.footer ::placeholder {
+.suscripcion::placeholder, .footer::placeholder {
   padding-left: 15px;
 }
 
