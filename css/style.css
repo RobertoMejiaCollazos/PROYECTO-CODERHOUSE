@@ -1,6 +1,13 @@
 @charset "UTF-8";
 /* ========== FUENTES ========== */
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Roboto:wght@300;400;500;700&display=swap");
+/* ========== RESET ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /*==  HEADER ==*/
 .header {
   position: relative;
@@ -64,6 +71,7 @@
   transform: scale(1);
 }
 
+/*==  MODIFICANDO EL ICONO DE MENÚ DE BOOSTRAP ==*/
 .navbar-dark .navbar-toggler {
   border: none;
 }
@@ -218,7 +226,6 @@
 }
 
 /*==  PROPIEDADES QUE SE REPITEN ==*/
-/* ========== IGUALES 1 ========== */
 .row {
   margin: 0;
 }
