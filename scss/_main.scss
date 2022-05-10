@@ -49,6 +49,9 @@
         background-color: $color-secundario;
         font-weight: 500;
         border-radius: 5px;
+        &:hover {
+            background-color: $color-secundario-hover;
+        }
     }    
 }
 
@@ -163,7 +166,7 @@
     &__li--btn {
         list-style: none;
         background-color: $color-primario;
-        padding: 10px 25px;
+        padding: 10px 22px;
         border-radius: 5px;
         margin: 20px 5px 0px 5px;
         color: $color-blanco;
@@ -199,7 +202,6 @@
 
 /* ////////////////////////////// CONTACTO ////////////////////////////// */
 .contacto {
-    max-width: 960px;
     width: 75%;
     height: 700px;
     margin: 0 auto 0 auto;
