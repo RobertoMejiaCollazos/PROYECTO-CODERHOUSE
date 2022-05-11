@@ -1,20 +1,68 @@
 /* ////////////////////////////// MEDIAS QUERIES ////////////////////////////// */
-/* ========== TABLETS ========== */
-@media (max-width: 992px) {
+/* ========== LARGE SCREENS ========== */
+// @media (min-width: 1200px) {
+//     .bienvenida {
+//         &__derecha {
+//             display: flex;
+//             align-items: center;
+//         }
+//     }
+// }
+
+@media (max-width: 1024px) {
+    .bienvenida {
+        &__derecha {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .suscripcion {
+        &__contenedor {
+            width: 55%;
+        }
+    }
+
+    .clientes {
+        width: 90%;
+    }
+    
+    .historia {
+        padding: 2rem 0rem 1rem 0rem;
+        &__derecha {
+            display: flex;
+            align-items: center;
+        }
+    }
     .misionVision {
-        padding: 0rem 0rem 2.5rem 0rem;
+        padding: 0rem 0rem 5.5rem 0rem;
 
         &__titulo {
             text-align: center;
         }
     }
 
+    .servicios {
+        width: 90%;
+    }
+
+    .portafolio {
+        margin: 0 auto;
+    }
+
+    .contacto {
+        &__contenedorEncabezado{
+            width: calc(100% - 100px);
+        }
+    }
+}
+
+@media (max-width: 992px) {
     .portafolio__div--oculto {
       display: none !important;
     }
-
 }
-/* ========== TABLETS ========== */
+/* ========== NOTEBOOKS ========== */
 @media (max-width: 768px) {
     .menu {
         &__li {
@@ -59,7 +107,10 @@
     }
 
     .bienvenida {
+        width: map-get($ancho, anchoSeccion768);
+        margin: 0 auto;
         padding: 2rem 0rem;
+
         
         &__titulo {
             text-align: center;
@@ -68,11 +119,17 @@
 
     .suscripcion {
         &__contenedor {
-            width: 70%;
+            width: map-get($ancho, anchoSeccion768);
         }
     }
 
+    .clientes {
+        width: map-get($ancho, anchoSeccion768);
+    }
+
     .historia {
+        width: map-get($ancho, anchoSeccion768);
+        margin: 0 auto;
         padding: 2.5rem 0rem;
         
         &__titulo {
@@ -81,8 +138,11 @@
     }
     
     .equipo {
+        width: map-get($ancho, anchoSeccion768);
+        padding: 0rem 0rem;
+
         &__contenedorEncabezado {
-            width: calc(100% - 44px);
+            width: 100%;
         }
         
         &__parrafo {
@@ -91,24 +151,37 @@
     
     }
 
+    .misionVision {
+        width: map-get($ancho, anchoSeccion768);
+        margin: 0 auto;
+        padding: 0rem 0rem 2.5rem 0rem;
+    }
+
     .servicios {
+        width: map-get($ancho, anchoSeccion768);
         &__contenedorEncabezado {
-            width: calc(100% - 44px);
+            width: 100%;
         }
     }
 
     .portafolio {
+        width: map-get($ancho, anchoSeccion768);
         &__contenedorEncabezado {
-            width: calc(100% - 44px);
+            width: 100%;
         }
     }
 
     .contacto {
+        width: map-get($ancho, anchoSeccion768);
         height: 1100px;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        justify-content: space-between;       
+        justify-content: space-between;   
+        
+        &__contenedorEncabezado {
+            width: calc(100% - 44px);
+        }
 
         &__derecha,
         &__izquierda {
@@ -157,48 +230,71 @@
         &__titulo {
             font-size: $fuente-titulo-presentacion-480;
         }
+        
         &__parrafo {
             font-size: $fuente-parrafo-presentacion-480;
         }
     }
 
     .bienvenida {
+        width: 100%;
+
         &__titulo {
             font-size: $fuente-titulo-480;
         }
+
         &__parrafo {
             font-size: $fuente-parrafo-480;
+            width: 100%;
         }
     }
     
     .suscripcion {
-        &__contenedor {
-            width: 85%;
+        &__titulo {
+            font-size: $fuente-titulo-480;
         }
+
+        &__parrafo {
+            font-size: $fuente-parrafo-480;
+            width: 100%;
+        }
+
+        &__contenedor {
+            width: 90%;
+        }
+    }
+
+    .clientes {
+        width: 100%;
     }
 
     .historia {
         padding: 2rem 0rem 2rem 0rem;
 
-        &__parrafo {
-            font-size: $fuente-parrafo-480;
-        }
-    }
-
-    .equipo {
-        padding: 0rem !important;
-
-        &__contenedorEncabezado {
-            width: calc(100% - 50px);
-        }
-
         &__titulo {
             font-size: $fuente-titulo-480;
         }
 
         &__parrafo {
-            width: 100%;
             font-size: $fuente-parrafo-480;
+            width: 100%;
+        }
+    }
+
+    .equipo {
+        width: map-get($ancho, anchoSeccion480);
+        padding: 0rem !important;
+
+        &__titulo {
+            font-size: $fuente-titulo-480;
+        }
+        &__parrafo {
+            font-size: $fuente-parrafo-480;
+            width: 100%;
+        }
+
+        &__contenedorEncabezado {
+            width: calc(100%);
         }
 
         &__contenedorIntegrantes {
@@ -215,10 +311,12 @@
 
         &__parrafo {
             font-size: $fuente-parrafo-480;
+            width: 100%;
         }
     }
 
     .servicios {
+        width: map-get($ancho, anchoSeccion480);
         padding: 2rem 0rem 2rem 0rem;
 
         &__titulo {
@@ -232,8 +330,10 @@
     }
 
     .portafolio {
+        width: map-get($ancho, anchoSeccion480);
         padding: 2rem 0rem 2.5rem 0rem;
 
+        
         &__titulo {
             font-size: $fuente-titulo-480;
         }
@@ -245,7 +345,6 @@
     }
 
     .contacto {
-        width: 90%;
         height: 1020px;
         justify-content: space-between;
 
@@ -259,6 +358,7 @@
 
         &__parrafo {
             font-size: $fuente-parrafo-480;
+            width: 100%;
         }
 
         &__izquierda {
@@ -272,9 +372,7 @@
         &__info {
             font-size: $fuente-parrafo-480;
         }
-
-    }
-    
+    } 
 }
 
 /* ========== MÓVIL ========== */

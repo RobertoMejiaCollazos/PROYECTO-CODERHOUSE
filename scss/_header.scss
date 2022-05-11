@@ -97,15 +97,11 @@
     }
 
     &__izquierda {
-        width: 500px;
-        height: auto;
-        display: inline-block;
+        @include presentacion;
     }
     
     &__derecha {
-        max-width: 500px;
-        height: auto;
-        display: inline-block;
+        @include presentacion;
         padding: 30px;
     }
     

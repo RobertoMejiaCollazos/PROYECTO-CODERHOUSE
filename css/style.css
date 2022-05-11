@@ -112,7 +112,7 @@
 }
 
 .presentacion__derecha {
-  max-width: 500px;
+  width: 500px;
   height: auto;
   display: inline-block;
   padding: 30px;
@@ -285,11 +285,7 @@
   padding-left: 15px;
 }
 
-.clientes, .equipo, .portafolio, .contacto {
-  max-width: 1000px;
-}
-
-.servicios, .clientes, .equipo, .portafolio, .contacto {
+.clientes, .equipo, .servicios, .portafolio, .contacto {
   max-width: 1000px;
   margin: 0px auto;
   padding: 60px 0px;
@@ -507,7 +503,7 @@
 }
 
 .contacto__derecha, .contacto__izquierda {
-  width: 46%;
+  width: 48%;
   max-width: 500px;
   margin-top: 0;
   height: 500px;
@@ -666,20 +662,49 @@
 }
 
 /* ////////////////////////////// MEDIAS QUERIES ////////////////////////////// */
-/* ========== TABLETS ========== */
-@media (max-width: 992px) {
+/* ========== LARGE SCREENS ========== */
+@media (max-width: 1024px) {
+  .bienvenida__derecha {
+    display: flex;
+    align-items: center;
+  }
+  .suscripcion__contenedor {
+    width: 55%;
+  }
+  .clientes, .equipo, .servicios, .portafolio, .contacto {
+    width: 90%;
+  }
+  .historia {
+    padding: 2rem 0rem 1rem 0rem;
+  }
+  .historia__derecha {
+    display: flex;
+    align-items: center;
+  }
   .misionVision {
-    padding: 0rem 0rem 2.5rem 0rem;
+    padding: 0rem 0rem 5.5rem 0rem;
   }
   .misionVision__titulo {
     text-align: center;
   }
+  .servicios {
+    width: 90%;
+  }
+  .portafolio {
+    margin: 0 auto;
+  }
+  .contacto__contenedorEncabezado {
+    width: calc(100% - 100px);
+  }
+}
+
+@media (max-width: 992px) {
   .portafolio__div--oculto {
     display: none !important;
   }
 }
 
-/* ========== TABLETS ========== */
+/* ========== NOTEBOOKS ========== */
 @media (max-width: 768px) {
   .menu__li {
     background-color: #fff;
@@ -712,38 +737,64 @@
     font-size: 25px;
   }
   .bienvenida, .historia, .misionVision {
+    width: 80%;
+    margin: 0 auto;
     padding: 2rem 0rem;
   }
   .bienvenida__titulo, .suscripcion__titulo, .clientes__titulo, .historia__titulo, .equipo__titulo, .misionVision__titulo, .servicios__titulo, .portafolio__titulo, .contacto__titulo {
     text-align: center;
   }
   .suscripcion__contenedor {
-    width: 70%;
+    width: 80%;
+  }
+  .clientes, .equipo, .servicios, .portafolio, .contacto {
+    width: 80%;
   }
   .historia {
+    width: 80%;
+    margin: 0 auto;
     padding: 2.5rem 0rem;
   }
   .historia__titulo {
     text-align: center;
   }
+  .equipo {
+    width: 80%;
+    padding: 0rem 0rem;
+  }
   .equipo__contenedorEncabezado, .servicios__contenedorEncabezado, .portafolio__contenedorEncabezado, .contacto__contenedorEncabezado {
-    width: calc(100% - 44px);
+    width: 100%;
   }
   .equipo__parrafo, .servicios__parrafo, .portafolio__parrafo, .contacto__parrafo {
     width: 100%;
   }
+  .misionVision {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0rem 0rem 2.5rem 0rem;
+  }
+  .servicios {
+    width: 80%;
+  }
   .servicios__contenedorEncabezado {
-    width: calc(100% - 44px);
+    width: 100%;
+  }
+  .portafolio {
+    width: 80%;
   }
   .portafolio__contenedorEncabezado {
-    width: calc(100% - 44px);
+    width: 100%;
   }
   .contacto {
+    width: 80%;
     height: 1100px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
+  }
+  .contacto__contenedorEncabezado {
+    width: calc(100% - 44px);
   }
   .contacto__derecha, .contacto__izquierda {
     width: 100%;
@@ -781,33 +832,52 @@
   .presentacion__parrafo {
     font-size: 20px;
   }
+  .bienvenida, .historia, .misionVision {
+    width: 100%;
+  }
   .bienvenida__titulo, .suscripcion__titulo, .clientes__titulo, .historia__titulo, .equipo__titulo, .misionVision__titulo, .servicios__titulo, .portafolio__titulo, .contacto__titulo {
     font-size: 28px;
   }
   .bienvenida__parrafo, .historia__parrafo, .equipo__parrafo, .servicios__parrafo, .portafolio__parrafo, .contacto__parrafo, .misionVision__parrafo {
     font-size: 16px;
+    width: 100%;
+  }
+  .suscripcion__titulo {
+    font-size: 28px;
+  }
+  .suscripcion__parrafo {
+    font-size: 16px;
+    width: 100%;
   }
   .suscripcion__contenedor {
-    width: 85%;
+    width: 90%;
+  }
+  .clientes, .equipo, .servicios, .portafolio, .contacto {
+    width: 100%;
   }
   .historia {
     padding: 2rem 0rem 2rem 0rem;
   }
+  .historia__titulo {
+    font-size: 28px;
+  }
   .historia__parrafo {
     font-size: 16px;
+    width: 100%;
   }
   .equipo {
+    width: 90%;
     padding: 0rem !important;
-  }
-  .equipo__contenedorEncabezado, .servicios__contenedorEncabezado, .portafolio__contenedorEncabezado, .contacto__contenedorEncabezado {
-    width: calc(100% - 50px);
   }
   .equipo__titulo {
     font-size: 28px;
   }
   .equipo__parrafo, .servicios__parrafo, .portafolio__parrafo, .contacto__parrafo {
-    width: 100%;
     font-size: 16px;
+    width: 100%;
+  }
+  .equipo__contenedorEncabezado, .servicios__contenedorEncabezado, .portafolio__contenedorEncabezado, .contacto__contenedorEncabezado {
+    width: calc(100%);
   }
   .equipo__contenedorIntegrantes {
     padding-bottom: 0;
@@ -820,8 +890,10 @@
   }
   .misionVision__parrafo {
     font-size: 16px;
+    width: 100%;
   }
-  .servicios, .clientes, .equipo, .portafolio, .contacto {
+  .servicios {
+    width: 90%;
     padding: 2rem 0rem 2rem 0rem;
   }
   .servicios__titulo {
@@ -832,6 +904,7 @@
     width: 100%;
   }
   .portafolio {
+    width: 90%;
     padding: 2rem 0rem 2.5rem 0rem;
   }
   .portafolio__titulo {
@@ -842,7 +915,6 @@
     width: 100%;
   }
   .contacto {
-    width: 90%;
     height: 1020px;
     justify-content: space-between;
   }
@@ -854,6 +926,7 @@
   }
   .contacto__parrafo {
     font-size: 16px;
+    width: 100%;
   }
   .contacto__izquierda {
     height: 400px;

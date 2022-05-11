@@ -123,7 +123,8 @@
 
 .clientes {
   max-width: 1000px;
-  @extend .servicios;
+  margin: 0px auto;
+  padding: 60px 0px;
 }
 
 .historia {
@@ -139,9 +140,7 @@
 }
 
 .servicios {
-  max-width: 1000px;
-  margin: 0px auto;
-  padding: 60px 0px;
+  @extend .clientes;
 }
 
 .portafolio {
