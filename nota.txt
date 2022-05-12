@@ -1,0 +1,3 @@
+1.Me acabo de dar cuenta que node no compila bien hay una pequeña diferencia con liverserver sass, hace que las llaves no esten indexadas.
+2.Casi guardo cambios en style.css cuando se activo el compilador de node. Es mejor para mi usar sass compiler como nos enseño.
+3.Por si las dudas práctique instalar las dependencias de node y dejo subido los .json. Saludos.
