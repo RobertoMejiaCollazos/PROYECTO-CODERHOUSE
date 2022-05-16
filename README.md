@@ -12,11 +12,16 @@ Proyecto subido el día 19/04/2022 para el curso de Desarrollo Web.
 - AOS (librería de animación)
 - Node
 - Git/GitHub
+- Filezilla
 
 ## Autor
 
 - [Roberto Agustín Mejía Collazos](https://github.com/RobertoMejiaCollazos)
 
-## Enlace de Proyecto
+## Enlace de Proyecto desde GitHub Pages
 
-[Enlace de proyecto subido a GitHub Pages](https://robertomejiacollazos.github.io/PROYECTO-CODERHOUSE/)
+- [Enlace de proyecto](https://robertomejiacollazos.github.io/PROYECTO-CODERHOUSE/)
+
+## Enlace de proyecto desde 000webhost
+
+- [Enlace de proyecto](https://proyecto--coderhouse.000webhostapp.com/)
