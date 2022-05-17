@@ -915,6 +915,7 @@
     width: 100%;
   }
   .contacto {
+    width: 85%;
     height: 1020px;
     justify-content: space-between;
   }
@@ -958,7 +959,6 @@
     padding: 0rem 0rem 2rem 0rem;
   }
   .contacto {
-    width: 85%;
     height: 1070px;
   }
   .contacto__izquierda {
